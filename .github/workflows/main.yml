@@ -1,0 +1,13 @@
+apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential
+
+git clone --single-branch -b ARM https://github.com/monkins1010/ccminer.git
+
+cd ccminer
+
+chmod +x build.sh
+chmod +x configure.sh
+chmod +x autogen.sh
+./build.sh
+
+Verus
+./ccminer -a verus -o stratum+tcp://ap.luckpool.net:3956 -u RPw5r4nNf54F1PxnXeUvTWnRnBG8rLAB8j.Shein06-p x ./ccminer -o stratum+tcp://ap.luckpool.net:3956 -u RFKN46V1D5vmAwpL7C7qEJ2fmEpeu4rJs6.Susanto -p x   -t 8 
